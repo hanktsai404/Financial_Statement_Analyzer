@@ -53,9 +53,23 @@ class company():
                 target_csv = open(self.stock_path + "\\" + str(sub_key) + str(key) + ".csv", "w", newline="", encoding="UTF-8")
                 self.fs_dict[key][sub_key].to_csv(target_csv)
                 target_csv.close()
+    
+    def read_fs_from_csv(self, period: int):
+        self.fs_dict = dict()
+        for i in range(period):
+            key = YEAR-1-i
+            bs_sheet = pd.read_csv(self.stock_path + "\\" + "bs_sheet" + str(key) + ".csv", encoding="UTF-8")
+            statement_of_CI = pd.read_csv(self.stock_path + "\\" + "statement_of_CI" + str(key) + ".csv", encoding="UTF-8")
+            statement_of_CF = pd.read_csv(self.stock_path + "\\" + "statement_of_CF" + str(key) + ".csv", encoding="UTF-8")
+            self.fs_dict[key] = {'bs_sheet': bs_sheet, 'statement_of_CI': statement_of_CI, 'statement_of_CF': statement_of_CF}
+
+
+        
 
 if __name__ == "__main__":
     FIH = company("2707", "FIH")
+    # FIH.read_fs_from_csv(3)
+    # print(FIH.fs_dict[2018]['statement_of_CI'])
     # FIH.crawl_fs(2020)
     # FIH.crawl_fs(2019)
     # FIH.crawl_fs(2018)
@@ -74,4 +88,4 @@ if __name__ == "__main__":
         LMT.crawl_fs(YEAR-1-i)
         progress.update(1)
     FIH.write_fs_to_csv()
-    LMT.write_fs_to_csv
+    LMT.write_fs_to_csv()
