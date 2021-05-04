@@ -13,6 +13,7 @@ import time, datetime
 import os
 from io import StringIO
 import matplotlib.pyplot as plotter
+from tqdm import tqdm
 
 YEAR = datetime.datetime.now().year
 
@@ -27,21 +28,24 @@ class company():
     
     def crawl_fs(self, year = YEAR - 1):
         '''Crawl the financial statements'''
-        fs_url = "https://mops.twse.com.tw/server-java/t164sb01?step=1"+"&"+"CO_ID="+str(self.index)+"&SYEAR="+str(year)+"&SSEASON=4&REPORT_ID=C"
-        # print(fs_url)
-        fs_web = requests.get(fs_url)
-        fs_web.encoding = "big5"
-        print("check")  # sucessfully enter the website
-        fs_datas = pd.read_html(StringIO(fs_web.text))
-        time.sleep(random.randint(1, 5))
-        bs_sheet = fs_datas[0]
-        bs_sheet.columns = ["Code", "Title", str(year), str(year-1)]
-        statement_of_CI = fs_datas[1]
-        statement_of_CI.columns = ["Code", "Title", str(year), str(year-1)]
-        statement_of_CF = fs_datas[2]
-        statement_of_CF.columns = ["Code", "Title", "In"+str(year), "In"+str(year-1)]
-        
-        self.fs_dict[year] = {'bs_sheet': bs_sheet, 'statement_of_CI': statement_of_CI, 'statement_of_CF': statement_of_CF}
+        if year == 2018:
+            self.fs_dict[year] = self.fs_dict[2019]
+        else:
+            fs_url = "https://mops.twse.com.tw/server-java/t164sb01?step=1"+"&"+"CO_ID="+str(self.index)+"&SYEAR="+str(year)+"&SSEASON=4&REPORT_ID=C"
+            # print(fs_url)
+            fs_web = requests.get(fs_url)
+            fs_web.encoding = "big5"
+            # print("check")  # sucessfully enter the website
+            fs_datas = pd.read_html(StringIO(fs_web.text))
+            time.sleep(random.randint(1, 5))
+            bs_sheet = fs_datas[0]
+            bs_sheet.columns = ["Code", "Title", str(year), str(year-1)]
+            statement_of_CI = fs_datas[1]
+            statement_of_CI.columns = ["Code", "Title", str(year), str(year-1)]
+            statement_of_CF = fs_datas[2]
+            statement_of_CF.columns = ["Code", "Title", "In"+str(year), "In"+str(year-1)]
+
+            self.fs_dict[year] = {'bs_sheet': bs_sheet, 'statement_of_CI': statement_of_CI, 'statement_of_CF': statement_of_CF}
     
     def write_fs_to_csv(self):
         for key in self.fs_dict.keys():
@@ -52,6 +56,22 @@ class company():
 
 if __name__ == "__main__":
     FIH = company("2707", "FIH")
-    FIH.crawl_fs(2020)
-    FIH.crawl_fs(2019)
+    # FIH.crawl_fs(2020)
+    # FIH.crawl_fs(2019)
+    # FIH.crawl_fs(2018)
+    # FIH.write_fs_to_csv()
+
+    LMT = company("2739", "LMT")
+    # LMT.crawl_fs(2020)
+    # LMT.crawl_fs(2019)
+    # LMT.crawl_fs(2018)
+    # LMT.write_fs_to_csv()
+
+    PERIOD = 3
+    progress = tqdm(total = PERIOD)
+    for i in range(PERIOD):
+        FIH.crawl_fs(YEAR-1-i)
+        LMT.crawl_fs(YEAR-1-i)
+        progress.update(1)
     FIH.write_fs_to_csv()
+    LMT.write_fs_to_csv

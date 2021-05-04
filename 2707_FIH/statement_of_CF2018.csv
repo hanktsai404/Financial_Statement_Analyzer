@@ -1,0 +1,73 @@
+,Code,Title,In2019,In2018
+0,,"營業活動之現金流量－間接法Cash flows from (used in) operating activities, indirect method",,
+1,A00010,繼續營業單位稅前淨利（淨損）　Profit (loss) from continuing operations before tax,1630996,1674262
+2,A10000,本期稅前淨利（淨損）　Profit (loss) before tax,1630996,1674262
+3,,調整項目　Adjustments,,
+4,,收益費損項目 Adjustments to reconcile profit (loss),,
+5,A20100,折舊費用 Depreciation expense,715599,410806
+6,A20200,攤銷費用 Amortization expense,12059,18174
+7,A20400,透過損益按公允價值衡量金融資產及負債之淨損失（利益） Net loss (gain) on financial assets or liabilities at fair value through profit or loss,"(54,865)",17791
+8,A20900,利息費用 Interest expense,100659,26379
+9,A21200,利息收入 Interest income,"(39,389)","(12,246)"
+10,A22300,採用權益法認列之關聯企業及合資損失（利益）之份額 Share of loss (profit) of associates and joint ventures accounted for using equity method,"(11,375)","(6,921)"
+11,A22500,"處分及報廢不動產、廠房及設備損失（利益） Loss (gain) on disposal of property, plan and equipment","(10,435)",161
+12,A22600,"不動產、廠房及設備轉列費用數 Property, plan and equipment transferred to expenses",22999,18209
+13,A22700,處分投資性不動產損失（利益） Loss (gain) on disposal of investment properties,"(197,283)",0
+14,A23200,處分採用權益法之投資損失（利益） Loss (gain) on disposal of investments accounted for using equity method,15,"(480,994)"
+15,A29900,其他項目 Other adjustments to reconcile profit (loss),"(9,664)",3779
+16,A20010,收益費損項目合計 Total adjustments to reconcile profit (loss),528320,"(4,862)"
+17,,與營業活動相關之資產／負債變動數 Changes in operating assets and liabilities,,
+18,,與營業活動相關之資產之淨變動 Changes in operating assets,,
+19,A31115,"強制透過損益按公允價值衡量之金融資產（增加）減少 Decrease (increase) in financial assets at fair value through profit or loss, mandatorily measured at fair value",291126,"(246,978)"
+20,A31130,應收票據（增加）減少 Decrease (increase) in notes receivable,17237,10738
+21,A31150,應收帳款（增加）減少 Decrease (increase) in accounts receivable,70193,"(60,861)"
+22,A31180,其他應收款（增加）減少 Decrease (increase) in other receivable,1205,2880
+23,A31200,存貨（增加）減少 Decrease (increase) in inventories,9678,23449
+24,A31220,預付費用（增加）減少 Decrease (increase) in prepaid expenses,9634,4607
+25,A31990,其他營業資產（增加）減少 Decrease (increase) in other operating assets,834,"(1,148)"
+26,A31000,與營業活動相關之資產之淨變動合計 Total changes in operating assets,399907,"(267,313)"
+27,,與營業活動相關之負債之淨變動 Changes in operating liabilities,,
+28,A32125,合約負債增加（減少） Increase (decrease) in contract liabilities,26834,31074
+29,A32130,應付票據增加（減少） Increase (decrease) in notes payable,"(6,505)",7779
+30,A32150,應付帳款增加（減少） Increase (decrease) in accounts payable,"(2,987)",5317
+31,A32180,其他應付款增加（減少） Increase (decrease) in other payable,100899,31008
+32,A32230,其他流動負債增加（減少） Increase (decrease) in other current liabilities,5522,"(5,924)"
+33,A32240,淨確定福利負債增加(減少) Increase (decrease) in net defined benefit liability,"(22,297)","(30,171)"
+34,A32990,其他營業負債增加（減少） Increase (decrease) in other operating liabilities,"(1,906)",386
+35,A32000,與營業活動相關之負債之淨變動合計 Total changes in operating liabilities,99560,39469
+36,A30000,與營業活動相關之資產及負債之淨變動合計 Total changes in operating assets and liabilities,499467,"(227,844)"
+37,A20000,調整項目合計 Total adjustments,1027787,"(232,706)"
+38,A33000,營運產生之現金流入（流出）　Cash inflow (outflow) generated from operations,2658783,1441556
+39,A33100,收取之利息　Interest received,24166,4932
+40,A33300,支付之利息　Interest paid,"(77,183)","(1,836)"
+41,A33500,退還（支付）之所得稅　Income taxes refund (paid),"(253,691)","(189,912)"
+42,AAAA,營業活動之淨現金流入（流出）Net cash flows from (used in) operating activities,2352075,1254740
+43,,投資活動之現金流量Cash flows from (used in) investing activities,,
+44,B00040,取得按攤銷後成本衡量之金融資產　Acquisition of financial assets at amortised cost,"(300,535)","(34,746)"
+45,B02300,處分子公司　Proceeds from disposal of subsidiaries,"(4,855)",378356
+46,B02700,"取得不動產、廠房及設備　Acquisition of property, plant and equipment","(257,763)","(191,280)"
+47,B02800,"處分不動產、廠房及設備　Proceeds from disposal of property, plant and equipment",14401,2162
+48,B03700,存出保證金增加　Increase in refundable deposits,(677),"(1,065)"
+49,B03800,存出保證金減少　Decrease in refundable deposits,1161,2843
+50,B04500,取得無形資產　Acquisition of intangible assets,"(1,018)",(13)
+51,B05000,因合併產生之現金流入　Net cash inflows from business combination,0,5000
+52,B05350,取得使用權資產　Acquisition of use-of-right assets,(148),0
+53,B05500,處分投資性不動產　Proceeds from disposal of investment properties,493329,0
+54,B07100,預付設備款增加　Increase in prepayments for business facilities,"(3,019)","(7,006)"
+55,BBBB,投資活動之淨現金流入（流出）　Net cash flows from (used in) investing activities,"(59,124)",154251
+56,,籌資活動之現金流量Cash flows from (used in) financing activities,,
+57,C00100,短期借款增加　Increase in short-term loans,427053,0
+58,C00200,短期借款減少　Decrease in short-term loans,0,"(23,000)"
+59,C00500,應付短期票券增加　Increase in short-term notes and bills payable,50000,0
+60,C01300,償還公司債　Repayments of bonds,0,"(67,900)"
+61,C03000,存入保證金增加　Increase in guarantee deposits received,9554,6458
+62,C03100,存入保證金減少　Decrease in guarantee deposits received,"(15,377)","(14,383)"
+63,C04020,租賃本金償還　Payments of lease liabilities,"(258,405)",0
+64,C04500,發放現金股利　Cash dividends paid,"(2,184,021)","(876,067)"
+65,C05800,非控制權益變動　Change in non-controlling interests,"(7,908)",0
+66,CCCC,籌資活動之淨現金流入（流出）　Net cash flows from (used in) financing activities,"(1,979,104)","(974,892)"
+67,DDDD,匯率變動對現金及約當現金之影響Effect of exchange rate changes on cash and cash equivalents,"(1,956)",9224
+68,EEEE,本期現金及約當現金增加（減少）數Net increase (decrease) in cash and cash equivalents,311891,443323
+69,E00100,期初現金及約當現金餘額Cash and cash equivalents at beginning of period,896586,453263
+70,E00200,期末現金及約當現金餘額Cash and cash equivalents at end of period,1208477,896586
+71,E00210,資產負債表帳列之現金及約當現金　Cash and cash equivalents reported in the statement of financial position,1208477,896586
